@@ -1,0 +1,11 @@
+export const MARKET_CONTENT_ACTIONS = {
+  SEND_ORDER_INFORMATION: 'SEND_ORDER_INFORMATION',
+  REMOVE_CLICKED_ORDER: 'REMOVE_CLICKED_ORDER'
+};
+
+export const sendOrderInformation = data => ({
+  type: MARKET_CONTENT_ACTIONS.SEND_ORDER_INFORMATION,
+  payload: {
+    data
+  }
+});

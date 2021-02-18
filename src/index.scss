@@ -1,0 +1,108 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~antd/dist/antd.min.css';
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  overflow: auto !important;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes openOrdersHighlight {
+  0% {
+    background-color: rgba(248, 121, 121, 0.05);
+  }
+  25% {
+    background-color: rgba(248, 121, 121, 0.15);
+  }
+  50% {
+    background-color: rgba(153, 150, 180, 0.15);
+  }
+  75% {
+    background-color: rgba(58, 178, 238, 0.15);
+  }
+  100% {
+    background-color: rgba(58, 178, 238, 0.05);
+  }
+}
+
+@keyframes decrementHighlight {
+  50% {
+    background-color: rgba(248, 121, 121, 0.15);
+  }
+  100% {
+    background-color: rgba(248, 121, 121, 0.15);
+  }
+}
+
+@keyframes incrementHighlight {
+  50% {
+    background-color: rgba(58, 178, 238, 0.15);
+  }
+  100% {
+    background-color: rgba(58, 178, 238, 0.15);
+  }
+}
+
+@keyframes whiteRedWhite {
+  0% {
+    color: #ffffff;
+  }
+  10% {
+    color: #fcc4c4;
+  }
+  50% {
+    color: #f87979;
+  }
+  90% {
+    color: #fcc4c4;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+@keyframes whiteGreenWhite {
+  0% {
+    color: #ffffff;
+  }
+  10% {
+    color: #99e7cd;
+  }
+  50% {
+    color: #3ad09f;
+  }
+  90% {
+    color: #99e7cd;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1600px;
+  }
+}
